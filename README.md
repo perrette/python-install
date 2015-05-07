@@ -13,21 +13,28 @@ the system under consideration (Ubuntu)...
 
 ##Specific Instructions
 
-- __numpy__==1.9.4 : first install with pip might fail, `sudo apt-get install numpy` might be necessary to have the proper 
+###numpy
+
+- version: 1.9.4
+- First install with pip might fail, `sudo apt-get install numpy` might be necessary to have the proper 
 binaries installed. Subsequent install via virtualenv will work via pip.
 
-- __matplotlib__==1.4.3
-  - required binary : freetype 
-  - `sudo apt-get install libfreetype6-dev`
-  - `pip install matplotlib`
-  
-- __netCDF4__==1.1.7
-  - required binaries : HDF5, NETCDF4
-  - `sudo apt-get install libhdf5-serial-dev netcdf-bin libnetcdf-dev`
-  - `pip install netCDF4`
+###matplotlib
 
-- __cartopy__==0.12.0
-  - required binaries : PROJ4, GDAL, GEOS
-  - `sudo apt-get install libproj-dev libgdal-dev python-gdal libgeos-dev`
-  - required python modules not handled with pip: PIL (shipped with Pillow), cython, scipy
-  - `pip install cython Pillow scipy cartopy`
+- version: 1.4.3
+- required binary : freetype 
+- `sudo apt-get install libfreetype6-dev`
+- `pip install matplotlib`
+  
+###netCDF4
+- version: 1.1.7
+- required binaries : HDF5, NETCDF4
+- `sudo apt-get install libhdf5-serial-dev netcdf-bin libnetcdf-dev`
+- `pip install netCDF4`
+
+###cartopy
+- version: 0.12.0
+- required binaries : PROJ4, GDAL, GEOS
+- `sudo apt-get install libproj-dev libgdal-dev python-gdal libgeos-dev`
+- required python modules not handled with pip: PIL (shipped with Pillow), cython, scipy
+- `pip install cython Pillow scipy cartopy`
